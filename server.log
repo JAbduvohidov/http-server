@@ -1,0 +1,78 @@
+2020/02/23 12:34:53 connection accepted
+2020/02/23 12:34:53 start accepting
+2020/02/23 12:34:53 start reading
+2020/02/23 12:34:53 connection accepted
+2020/02/23 12:34:53 start accepting
+2020/02/23 12:34:53 start reading
+2020/02/23 12:34:53 request: GET /image.jpg?download HTTP/1.1
+2020/02/23 12:34:53 method: GET; request: /image.jpg; protocol: HTTP/1.1
+2020/02/23 12:34:53 image/jpg
+2020/02/23 12:39:15 start listening
+2020/02/23 12:39:15 listening started
+2020/02/23 12:39:15 start accepting
+2020/02/23 12:39:19 connection accepted
+2020/02/23 12:39:19 start accepting
+2020/02/23 12:39:19 start reading
+2020/02/23 12:39:19 connection accepted
+2020/02/23 12:39:19 start accepting
+2020/02/23 12:39:19 start reading
+2020/02/23 12:39:19 request: GET /image.jpg?download HTTP/1.1
+2020/02/23 12:39:19 method: GET; request: /image.jpg; protocol: HTTP/1.1
+2020/02/23 12:39:19 application/octet-stream
+2020/02/23 12:39:50 can't read string: EOF
+2020/02/23 12:39:50 connection accepted
+2020/02/23 12:39:50 start accepting
+2020/02/23 12:39:50 start reading
+2020/02/23 12:39:50 connection accepted
+2020/02/23 12:39:50 start accepting
+2020/02/23 12:39:50 start reading
+2020/02/23 12:39:50 request: GET /image.jpg HTTP/1.1
+2020/02/23 12:39:50 method: GET; request: /image.jpg; protocol: HTTP/1.1
+2020/02/23 12:39:50 image/jpg
+2020/02/23 12:39:54 connection accepted
+2020/02/23 12:39:54 start accepting
+2020/02/23 12:39:54 start reading
+2020/02/23 12:40:03 connection accepted
+2020/02/23 12:40:03 start accepting
+2020/02/23 12:40:03 start reading
+2020/02/23 12:40:03 can't read string: EOF
+2020/02/23 12:40:03 request: GET / HTTP/1.1
+2020/02/23 12:40:03 method: GET; request: /; protocol: HTTP/1.1
+2020/02/23 12:40:03 text/html
+2020/02/23 12:40:08 connection accepted
+2020/02/23 12:40:08 start accepting
+2020/02/23 12:40:08 start reading
+2020/02/23 12:40:08 request: GET /?download HTTP/1.1
+2020/02/23 12:40:08 method: GET; request: /; protocol: HTTP/1.1
+2020/02/23 12:40:08 application/octet-stream
+2020/02/23 12:40:22 can't read string: EOF
+2020/02/23 12:40:22 connection accepted
+2020/02/23 12:40:22 start accepting
+2020/02/23 12:40:22 start reading
+2020/02/23 12:40:22 connection accepted
+2020/02/23 12:40:22 start accepting
+2020/02/23 12:40:22 start reading
+2020/02/23 12:40:22 request: GET /?download HTTP/1.1
+2020/02/23 12:40:22 method: GET; request: /; protocol: HTTP/1.1
+2020/02/23 12:40:22 application/octet-stream
+2020/02/23 12:46:27 can't read string: EOF
+2020/02/23 12:46:27 connection accepted
+2020/02/23 12:46:27 start accepting
+2020/02/23 12:46:27 start reading
+2020/02/23 12:46:27 connection accepted
+2020/02/23 12:46:27 start accepting
+2020/02/23 12:46:27 start reading
+2020/02/23 12:46:27 request: GET /image.jpg HTTP/1.1
+2020/02/23 12:46:27 method: GET; request: /image.jpg; protocol: HTTP/1.1
+2020/02/23 12:46:27 image/jpg
+2020/02/23 12:46:29 connection accepted
+2020/02/23 12:46:29 start accepting
+2020/02/23 12:46:29 start reading
+2020/02/23 12:46:29 request: GET /image.jpg?download HTTP/1.1
+2020/02/23 12:46:29 method: GET; request: /image.jpg; protocol: HTTP/1.1
+2020/02/23 12:46:29 application/octet-stream
+2020/02/23 12:46:30 connection accepted
+2020/02/23 12:46:30 start accepting
+2020/02/23 12:46:30 start reading
+2020/02/23 12:53:05 can't read string: EOF
+2020/02/23 12:53:05 can't read string: EOF

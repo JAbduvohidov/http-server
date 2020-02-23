@@ -33,7 +33,7 @@ func main() {
 	log.SetOutput(file)
 
 	log.Print("start listening")
-	listener, err := net.Listen("tcp", "0.0.0.0:9999")
+	listener, err := net.Listen("tcp", "0.0.0.0")
 	if err != nil {
 		log.Printf("can't listen %v", err)
 		return

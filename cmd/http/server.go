@@ -32,8 +32,14 @@ func main() {
 
 	log.SetOutput(file)
 
+	host := "0.0.0.0"
+	port, ok := os.LookupEnv("PORT")
+	if !ok {
+		port = "9999"
+	}
+
 	log.Print("start listening")
-	listener, err := net.Listen("tcp", "0.0.0.0")
+	listener, err := net.Listen("tcp", host + ":" + port)
 	if err != nil {
 		log.Printf("can't listen %v", err)
 		return

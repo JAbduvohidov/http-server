@@ -12,7 +12,7 @@ import (
 
 const (
 	httpStatusOK       = "200 OK"
-	httpStatusNotFound = "404.1"
+	httpStatusNotFound = "404 not found"
 )
 
 func main() {

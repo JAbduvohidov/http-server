@@ -84,15 +84,15 @@ func handleConn(conn net.Conn) {
 		request = strings.Replace(request, "?download", "", -1)
 	}
 	for indx, requestType := range requestTypes {
-		if method == "GET" && request == requestType && protocol == "HTTP/1.1" {
-			if contentType == "application/octet-stream" {
-				sendContent(method, request, protocol, contentNames[indx], contentType, httpStatusOK, conn)
-				return
-			}
-
-			sendContent(method, request, protocol, contentNames[indx], contentTypes[indx], httpStatusOK, conn)
+		if method != "GET" && request != requestType && protocol != "HTTP/1.1" {
 			return
 		}
+		if contentType == "application/octet-stream" {
+			sendContent(method, request, protocol, contentNames[indx], contentType, httpStatusOK, conn)
+			return
+		}
+		sendContent(method, request, protocol, contentNames[indx], contentTypes[indx], httpStatusOK, conn)
+		return
 	}
 	sendContent(method, request, protocol, "404-index.html", "text/html", httpStatusNotFound, conn)
 }

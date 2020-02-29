@@ -39,7 +39,7 @@ func main() {
 	}
 
 	log.Print("start listening")
-	listener, err := net.Listen("tcp", host + ":" + port)
+	listener, err := net.Listen("tcp", host+":"+port)
 	if err != nil {
 		log.Printf("can't listen %v", err)
 		return
@@ -74,6 +74,10 @@ func handleConn(conn net.Conn) {
 
 	method, request, protocol := parts[0], parts[1], parts[2]
 
+	if method != "GET" || protocol != "HTTP/1.1" {
+		//
+	}
+
 	requestTypes := []string{"/", "/image.jpg", "/image.png", "/page.html", "/file.txt", "/sample.pdf"}
 	contentNames := []string{"index.html", "bio-hazard.jpg", "UHD2.png", "another-index.html", "text-file.txt", "sample.pdf"}
 	contentTypes := []string{"text/html", "image/jpg", "image/png", "text/html", "text/plain", "application/pdf"}
@@ -84,8 +88,8 @@ func handleConn(conn net.Conn) {
 		request = strings.Replace(request, "?download", "", -1)
 	}
 	for indx, requestType := range requestTypes {
-		if method != "GET" && request != requestType && protocol != "HTTP/1.1" {
-			return
+		if request != requestType {
+			continue
 		}
 		if contentType == "application/octet-stream" {
 			sendContent(method, request, protocol, contentNames[indx], contentType, httpStatusOK, conn)
